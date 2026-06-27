@@ -1,5 +1,47 @@
+<<<<<<< Updated upstream
 .venv
 .vscode
 build
 dist
 */__pycache__
+=======
+# PyInstaller build artifacts
+build/
+dist/
+
+# PyInstaller spec cache
+*.spec
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Logs
+*.log
+logs/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# PyInstaller temporary files
+*.manifest
+*.exe.manifest
+
+# Distribution archives
+*.zip
+*.tar.gz
+>>>>>>> Stashed changes
