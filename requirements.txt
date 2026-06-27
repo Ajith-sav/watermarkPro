@@ -1,0 +1,29 @@
+# WatermarkPro v2 — Python Dependencies
+#
+# Setup:
+#   1. python -m pip install --upgrade pip
+#   2. pip install -r requirements.txt
+#
+# Or just double-click setup.bat (handles venv + install automatically).
+
+# ── Database ────────────────────────────────────────────────────────────────
+# PostgreSQL driver (binary wheel — no C compiler needed)
+psycopg2-binary>=2.9.9
+
+# ── UI / Overlay ────────────────────────────────────────────────────────────
+# System-tray icon
+pystray>=0.19.5
+
+# Icon + image generation
+Pillow>=10.0.0
+
+# ── System monitoring ───────────────────────────────────────────────────────
+# Process enumeration (foreground window detection, running apps scanner)
+psutil>=5.9.0
+
+# ── Windows-only (auto-skipped on Linux/macOS) ───────────────────────────────
+# Windows API: overlay click-through, WTS session tokens, Registry, services
+pywin32>=306; sys_platform == "win32"
+
+# ── Build tool (only needed to produce .exe files) ──────────────────────────
+pyinstaller>=6.0.0
